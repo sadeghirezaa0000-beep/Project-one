@@ -1,0 +1,6 @@
+#Exercise 1
+name=input("Please enter your name:")
+brith=int(input("please enter your brith:")) 
+nowyears=int(input("Please enter the now years:")) 
+age=nowyears-brith 
+print(f"Hello, {name}!you are approximately {age} years old.")
