@@ -1,0 +1,22 @@
+def callc_avg():       
+    total_sum = 0
+    total = int(input("تعداد درس را وارد کنید: "))
+    gradelist = []
+
+    for i in range(total):
+        grade = int(input(f"نمره درس {i+1} را وارد کنید: "))
+        gradelist.append(grade)
+        total_sum += grade
+
+    avg = total_sum / total
+
+    print("معدل شما:", avg)
+    print("نمره‌ها:", gradelist)
+    if avg>=19:
+        print("Good")
+    elif avg>=15:
+        print("accepted")
+    elif avg>=11:
+        print("conditional")
+
+callc_avg()

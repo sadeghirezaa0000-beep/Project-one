@@ -1,0 +1,29 @@
+class Book:
+    def __init__(self, title, price, author):
+        self.title = title
+        self.price = price
+        self.author = author
+    
+Book1 = Book("rez davinchi", 150.000, "den braven")
+Book2 = Book("kimia gar", 125.000, "paolo")
+def display_details():
+    
+  print("Book 1:")
+  print(f"{Book1.title}, {Book1.price}, {Book1.author}")
+  print("Book 2:")
+  print(f"{Book2.title}, {Book2.price}, {Book2.author}")
+
+def apply_discount():
+   Book1.price-=10
+   print("Book 1:")
+   print(f"{Book1.title}, {Book1.author}")
+   print(Book1.price)
+   print("Book 2:")
+   print(f"{Book2.title}, {Book2.price}, {Book2.author}")
+display_details()
+
+apply_discount()
+   
+
+    
+    
