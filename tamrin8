@@ -20,12 +20,12 @@ def result_pepoal():
     num1=int(ent_num1.get())
     num2=int(ent_num2.get())
     result=num1/num2
-    messagebox.showinfo(f"every person:{result}")
+    messagebox.showinfo(f"result",f"every person:{result}")
     ent_num1.delete(0,tk.END)
     ent_num2.delete(0,tk.END)
 
   except ValueError:
-    messagebox.showerror("Warning : Pleas Enter Number!")
+    messagebox.showerror("Warning :","Pleas Enter Number!")
 
 btn=tk.Button(root,text="Calculate",command=result_pepoal)
 btn.grid(row=2,column=0,columnspan=2,pady=20)
