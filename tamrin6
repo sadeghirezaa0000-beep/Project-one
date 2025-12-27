@@ -1,0 +1,43 @@
+class Shape:
+    def __init__(self):
+        pass
+    def calculate_area(self):
+        pass
+    def calculate_perimeter(self):
+        pass
+class Rectangle(Shape):
+    def __init__(self,width,height):
+        self.width=width
+        self.height=height
+        super().__init__()
+    def calculate_area(self):
+
+        result=self.width*self.height
+        print(f"Rectangle area:{result}")
+    def calculate_perimeter(self):
+        result=(self.width+self.height)*2
+        print(f"Rectangle perimeter:{result}")
+        
+        
+class Circle(Shape):
+    def __init__(self,radius):
+        self.radius=radius
+        super().__init__()
+    def calculate_area(self):
+        result=self.radius*self.radius*3.14
+        print(f"Circle area:{result}")
+    def calculate_perimeter(self):
+        result=2*3.14*self.radius
+        print(f"Circle perimeter:{result}")
+
+Shapes=[Rectangle(10,15),
+Circle(5)]
+for Shape in Shapes:
+    Shape.calculate_area()
+    Shape.calculate_perimeter()
+ 
+
+
+        
+
+ 
