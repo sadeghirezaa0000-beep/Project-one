@@ -1,0 +1,28 @@
+class Vahicle:
+    def __init__(self,brand,year):
+
+        self.brand=brand
+        self.year=year
+    def display_info(self):
+        print("Vahicle:\n"f"Brand:{self.brand}\n"f"Years:{self.year}")
+class car(Vahicle):
+    def __init__(self, brand, year,num_doors):
+        self.num_doors=num_doors
+        super().__init__(brand, year)
+    def display_info(self):
+        print("Car:\n"f"Brand:{self.brand}\n"f"Years:{self.year}\n"f"Num Doors:{self.num_doors}")
+class Motorcycle(Vahicle):
+    def __init__(self, brand, year,has_sidecar):
+        self.has_sidecar=has_sidecar
+        super().__init__(brand, year)
+    def display_info(self):
+         print("MotorCycle:\n"f"Brand:{self.brand}\n"f"Years:{self.year}\n"f"Sider:{self.has_sidecar}")
+
+v=Vahicle("Benz",2012)
+c=car("Farari",2018,2)
+m=Motorcycle("CB",2024,"Yes")
+v.display_info()
+c.display_info()
+m.display_info()
+
+
